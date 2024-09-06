@@ -1,0 +1,29 @@
+{
+  "name": "tg-mini-apps",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/tg-mini-apps.umd.cjs",
+  "module": "./dist/tg-mini-apps.js",
+  "exports": {
+    ".": {
+      "import": "./dist/tg-mini-apps.js",
+      "require": "./dist/tg-mini-apps.umn.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "@types/telegram-web-app": "^7.8.1"
+  }
+}
