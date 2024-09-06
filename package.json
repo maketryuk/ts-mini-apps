@@ -1,17 +1,17 @@
 {
-  "name": "tg-mini-apps",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@maketryuk/tg-mini-apps",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/tg-mini-apps.umd.cjs",
+  "main": "./dist/tg-mini-apps.cjs",
   "module": "./dist/tg-mini-apps.js",
   "exports": {
     ".": {
       "import": "./dist/tg-mini-apps.js",
-      "require": "./dist/tg-mini-apps.umn.cjs"
+      "require": "./dist/tg-mini-apps.cjs"
     }
   },
   "scripts": {
